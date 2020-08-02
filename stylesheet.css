@@ -1,4 +1,7 @@
 /*stylesheet for todo list*/
+body {
+  margin: 0px 0px;
+}
 #headInput {
   position: relative;
   text-align: center;
@@ -6,7 +9,7 @@
 #header {
   font-family: sans-serif;
   font-size: 100px;
-  margin-top: 150px;
+  margin-top: 140px;
   margin-bottom: 0px;
 }
 
@@ -25,7 +28,7 @@
 #todoItems {
   text-align: left;
   width: 60vw;
-  height: 50vh;
+  height: 45vh;
   padding-left: 20%;
   font-family: sans-serif;
   font-size: 30px;
@@ -45,4 +48,32 @@
 
 .checkLabel {
   padding-left: 10px;
+}
+
+#topNav {
+  background-color: #333;
+  overflow: hidden;
+  height: 40px;
+}
+
+#topNav h5 {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  margin: 0px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+#topNav h5:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+#topNav h5.active {
+  background-color: #4CAF50;
+  color: white;
 }

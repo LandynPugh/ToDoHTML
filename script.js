@@ -20,8 +20,22 @@ function entered_Text(keyPress) {
 }
 
 function checked_Item(gout) {
+  //Used to disable completed items
+  // ARGUMENTS:
+  // gout = number of label that is checked off
   var checkedBox = document.getElementById("item" + gout);
   var checkedBoxLabel = document.getElementById("itemLabel" + gout);
   checkedBoxLabel.style.textDecoration = "line-through";
   checkedBox.disabled = true;
+}
+
+function click_Save() {
+  //Saves current todo list as a .txt file
+  let temp;
+  let tempuraShrimp; //the label from which the inner HTML is the todo item string
+  let tempString; //string containing item text
+  for (temp = 0; temp < i; temp++) {
+    tempuraShrimp =  document.getElementById("itemLabel" + i);
+    tempString = tempuraShrimp.innerHTML;
+  }
 }
